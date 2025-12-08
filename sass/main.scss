@@ -1,0 +1,55 @@
+
+@import "../node_modules/bootstrap/scss/functions";
+
+$primary: #851476;
+$secondary: #F02AD6;
+$enable-gradients: true;
+$font-family-sans-serif:"Pixelify Sans" !default;
+$h1-font-size: 96px;
+$h2-font-size: 64px;
+$h3-font-size: 48px;
+$h4-font-size: 36px;
+$h5-font-size: 32px;
+$h6-font-size: 24px;
+$btn-font-size:32px;
+$border-width:5px;
+$border-color:#F02AD6;
+$btn-padding-y-lg:1rem;
+$btn-padding-x-lg:4rem;
+$btn-border-radius-lg: 0;
+$btn-font-size: 32px;       // h5
+$btn-font-size-lg: 32px;    // h5
+.rounded-custom {
+  border-radius: 40px !important; 
+}
+.icon-box {
+  width: 70px;
+  height: 70px;
+  background-color: $secondary; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px; 
+  margin-top: 1rem;
+}
+.container {
+  margin-top: 10rem;
+  margin-bottom: 2rem;  
+}
+.bottombox{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+
+$custom-colors: (
+    "primary-light": rgb(255,141,240),
+    "primary-dark": rgb(38,38,38),
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
