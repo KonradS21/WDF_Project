@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
     <script src='main.js'></script>
+    
 </head>
 <body class="bg-black bg-gradient align-items-center">
     <nav class="navbar bg-primary fixed-top">
@@ -31,18 +32,21 @@
             in your dungeon quest. Walk, battle monsters,
             collect awesome loot, and get fit while having fun!
         </h5>
-        <div class="container text-center ">
+        <div id="simple-list-example" class="container text-center ">
             <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
-                <div class="sm">
-                    <button type="button" class="btn btn-primary h5 bg-gradient text-white btn-lg bg-secondary border">Start Your Quest</button>
-                </div>
-            <div class="sm">
-                    <button type="button" class="btn btn-primary h5 text-white btn-lg border bg-primary-dark">Watch Trailer</button>
-            </div>
+                <a href="#simple-list-item-1">
+                    <div class="sm">
+                        <button type="button" class="btn btn-primary h5 bg-gradient text-white btn-lg bg-secondary border">Start Your Quest</button>
+                    </div>
+                <a href="#simple-list-item-2">
+                    <div class="sm">
+                        <button type="button" class="btn btn-primary h5 text-white btn-lg border bg-primary-dark">Watch Trailer</button>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container  align-items-center">
         <div class="row align-items-start">
             <div class="col-sm text-center bg-primary-dark border">
                 <h2 class="text-secondary">1M+</h2>
@@ -94,23 +98,54 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <h2 class="text-secondary text-center">But what do the players think?</h2>
+        <div class="row">
+            <div class="col-sm">
+                <div class="bg-primary-dark border p-3 mb-5">
+                    <h5 class="text-secondary">"A game changer for my fitness routine! Dungeon Walk makes every step exciting."</h5>
+                    <p class="text-white">- Alex T.</p>
+                    <p class="text-white">⭐⭐⭐⭐⭐</p>
+                </div>
+            </div>    
+            <div class="col-sm">
+                <div class="bg-primary-dark border p-3 mb-5">
+                    <h5 class="text-secondary">"Incredible stuff, this is a revolutionary app, i have nothing bad to say about it!"</h5>
+                    <p class="text-white">- Stefan P.</p>
+                    <p class="text-white">⭐⭐⭐⭐⭐</p>
+                </div>
+            </div>    <div class="col-sm">
+                <div class="bg-primary-dark border p-3 mb-5">
+                    <h5 class="text-secondary">"I dont see my family anymore, I forgot my kids' names im just too busy walking 10/10"</h5>
+                    <p class="text-white">- Steve J. </p>
+                    <p class="text-white">⭐⭐⭐⭐⭐</p>
+                </div>
+            </div>    
+        </div>
+    </div>
     <div class="bg-black container ">
         <div class="text-center">
             <h2 class="text-secondary">Adventure Awaits</h2>
             <h5 class="text-white">Experience pixel perfect combat with every step you take</h5>
         </div>
-        <div class="row" >
+        <div class="row text-center" >
             <div class="col-sm">
                 <img class="border" src="images/questpage.png">
+                <h5 class="text-white">Quest page </h5>
             </div>
             <div class="col-sm">
                 <img class=" border" src="images/homepage.png">
+                <h5 class="text-white">Home page </h5>
             </div>
             <div class="col-sm ">
                 <img class=" border" src="images/invpage.png">
+                <h5 class="text-white">Inventory page </h5>
             </div>
         </div>
-        <div class="infoyokes row align-items-start">
+        
+    </div>
+    <div class="container bg-black ">
+        <div class=" row align-items-start">
             <div class="col-sm bg-primary-dark border" >
                 
                 <h2 class="text-secondary">Retro Graphics</h2>
@@ -123,7 +158,7 @@
             </div>
         </div>
     </div>
-    <div class="container bottombox text-center bg-primary-dark">
+    <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="container bottombox text-center bg-primary-dark">
         <div class="sm">
             <button type="button" class="btn btn-primary bg-secondary h5 text-white bg-gradient border btn-lg rounded-custom">🎮BETA ACCESS NOW OPEN</button>
         </div>
@@ -131,16 +166,16 @@
         <h2 class="text-secondary">Dungeon Quest</h2>
         <h5 class="text-white">Join thousands of adventurers turning their daily walks into epic dungeon runs. Sign up now for early access!
         </h5>
-        <form class="" role="search">
+        <form class="container px-5" role="search">
             <div class="row">
                 <input class="form-control h5 me-2" type="search" placeholder="ENTER YOUR EMAIL" aria-label="Search"/>
-                </div>
+            </div>
             <div class="row">
                 <button class="btn btn-secondary text-white bg-gradient" type="submit">GET STARTED</button>
             </div>
             
         </form>
-        <h5 class="text-white">Available on IOS and Android | No credit card required!</h5>
+        <h5 id="simple-list-item-1" class="text-white">Available on IOS and Android | No credit card required!</h5>
         <div class="row">
             <div class="col">
                 <a class="navbar-brand " href="https://play.google.com/store/games?device=windows">
@@ -152,6 +187,15 @@
                 <img src="images/Download_on_the_App_Store_Badge.svg.png" alt="DungeonWalk" >
                 </a>
             </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2 id="simple-list-item-2" class="text-secondary text-center">Watch The Trailer</h2>
+        <div class="video-container text-center mt-5 ratio ratio-16x9 ">
+            <!-- <iframe class="border w-100" src="images/Dungeon walk trailer.mp4" controls title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            <video class="border w-100" controls>
+                <source src="images/Dungeon walk trailer.mp4" type="video/mp4">
+            </video>
         </div>
     </div>
     <div class="container bg-black">
@@ -174,6 +218,9 @@
             </div>
         </div>
         
+    </div>
+    <div class="container bg-black text-center text-white">
+        <p>© 2024 Dungeon Walk. All rights reserved. Made with 💜 for adventurers.</p>
     </div>
 </body>
 </html>
